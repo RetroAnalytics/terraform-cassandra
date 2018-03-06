@@ -18,8 +18,7 @@ variable "nodes_per_az" {
 }
 
 variable "subnet_count" {
-  type = "string"
-  description = "Count of subnets"
+  default = 0
 }
 
 variable "subnet_ids" {
@@ -33,8 +32,8 @@ variable "seed_subnet_ids" {
 }
 
 variable "seed_subnet_count" {
-  type = "string"
   description = "count of subnet IDs for seed nodes (/24 CIDR)"
+  default = 0
 }
 
 variable "seed_addr" {
